@@ -5,21 +5,21 @@
 class Temper < Formula
   desc "Temper by Turbolytics: declare what software must do, and verify the tests prove it"
   homepage "https://github.com/turbolytics/temper"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/turbolytics/temper/releases/download/v0.1.5/temper_0.1.5_darwin_amd64.tar.gz"
-      sha256 "a17b7f7c7d26c5f7ab472973e1d2dedb917e9cc17306e0040713546881c31b5b"
+      url "https://github.com/turbolytics/temper/releases/download/v0.1.6/temper_0.1.6_darwin_amd64.tar.gz"
+      sha256 "0002eec6c0beeba1c93e63bcaa082de48e0c777055c789ba2d762b2090d454c4"
 
       define_method(:install) do
         bin.install "temper"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/turbolytics/temper/releases/download/v0.1.5/temper_0.1.5_darwin_arm64.tar.gz"
-      sha256 "ce8b68250a7f7faf71a1f62c886daeaedaf08dd11625f5669d93ff23fb8850d9"
+      url "https://github.com/turbolytics/temper/releases/download/v0.1.6/temper_0.1.6_darwin_arm64.tar.gz"
+      sha256 "b073351147af80a4fba3812f5adcb82ed0842dd797c5e535bb8b80813c911b80"
 
       define_method(:install) do
         bin.install "temper"
@@ -29,15 +29,15 @@ class Temper < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/turbolytics/temper/releases/download/v0.1.5/temper_0.1.5_linux_amd64.tar.gz"
-      sha256 "5ce3d07a056828ee258ea13083868c69f3996a11009b07614ed700c9509e7ce2"
+      url "https://github.com/turbolytics/temper/releases/download/v0.1.6/temper_0.1.6_linux_amd64.tar.gz"
+      sha256 "dabe06701e2ee5a4d562e0ebb93036f9ecce6d0e7bfcddcbb3a413ed44c4db4b"
       define_method(:install) do
         bin.install "temper"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/turbolytics/temper/releases/download/v0.1.5/temper_0.1.5_linux_arm64.tar.gz"
-      sha256 "6813a6dd6355467b4297415dd8514a06a467c2ca3ed9024942ee1f20f9726b24"
+      url "https://github.com/turbolytics/temper/releases/download/v0.1.6/temper_0.1.6_linux_arm64.tar.gz"
+      sha256 "f38ba459ac8a3287b6da6fc30eab03a1e2fa7905bd7d393176940330f45f65e8"
       define_method(:install) do
         bin.install "temper"
       end
